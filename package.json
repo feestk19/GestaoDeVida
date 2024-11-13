@@ -1,0 +1,22 @@
+{
+  "name": "gestao_vida",
+  "version": "1.0.0",
+  "description": "Projeto Gestão de Vida",
+  "main": "main.js",
+  "scripts": {
+    "start": "dotnet run --project C:/DEV/PROJETOS_MASTER/GESTAO_VIDA/GESTAO_VIDA/GESTAO_VIDA.csproj",
+    "electron": "electron .",
+    "dev": "npm run start & npm run electron",
+	"dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feestk19/GestaoDeVida.git"
+  },
+  "author": "Fellipe Strombeck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feestk19/GestaoDeVida/issues"
+  },
+  "homepage": "https://github.com/feestk19/GestaoDeVida#readme"
+}

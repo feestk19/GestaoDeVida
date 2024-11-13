@@ -7,7 +7,7 @@
     "start": "dotnet run --project C:/DEV/PROJETOS_MASTER/GESTAO_VIDA/GESTAO_VIDA/GESTAO_VIDA.csproj",
     "electron": "electron .",
     "dev": "npm run start & npm run electron",
-	"dist": "electron-builder"
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,33 @@
   "bugs": {
     "url": "https://github.com/feestk19/GestaoDeVida/issues"
   },
-  "homepage": "https://github.com/feestk19/GestaoDeVida#readme"
+  "homepage": "https://github.com/feestk19/GestaoDeVida#readme",
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.gestaovida.app",
+    "productName": "Gestão Vida",
+	"publish":{
+		"provider": "generic",
+		"url": "https://yourserver.com/updates/"
+	},
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/app.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icons/app.icns",
+	  "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/icons/app.png"
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9"
+  }
 }

@@ -4,7 +4,7 @@
   "description": "Projeto Gestão de Vida",
   "main": "main.js",
   "scripts": {
-    "start": "dotnet run --project C:/DEV/PROJETOS_MASTER/GESTAO_VIDA/GESTAO_VIDA/GESTAO_VIDA.csproj",
+    "start": "dotnet run --project C:/Users/felli/OneDrive/Documents/GitHub/GestaoDeVida/GESTAO_VIDA.csproj",
     "electron": "electron .",
     "dev": "npm run start & npm run electron",
     "dist": "electron-builder"
@@ -26,10 +26,10 @@
   "build": {
     "appId": "com.gestaovida.app",
     "productName": "Gestão Vida",
-	"publish":{
-		"provider": "generic",
-		"url": "https://yourserver.com/updates/"
-	},
+    "publish": {
+      "provider": "generic",
+      "url": "https://yourserver.com/updates/"
+    },
     "win": {
       "target": "nsis",
       "icon": "assets/icons/app.ico"
@@ -37,7 +37,7 @@
     "mac": {
       "target": "dmg",
       "icon": "assets/icons/app.icns",
-	  "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities"
     },
     "linux": {
       "target": "AppImage",
@@ -45,6 +45,7 @@
     }
   },
   "dependencies": {
-    "electron-updater": "^6.3.9"
+    "electron-updater": "^6.3.9",
+    "winston": "^3.17.0"
   }
 }
